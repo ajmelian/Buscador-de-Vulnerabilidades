@@ -246,7 +246,9 @@ function runProcesses($products) {
 }
 
 // Ejemplo de uso
-$products = $argv[1];
-runProcesses($products);
+$product = trim(str_replace('"','',$argv[1]));
+$product = strip_tags($product);
+
+runProcesses($product);
 
 ?>
