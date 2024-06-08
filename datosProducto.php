@@ -246,7 +246,7 @@ function runProcesses($products) {
 }
 
 // Ejemplo de uso
-$products = ["Producto1 1.0", "Producto2 2.3", "Producto3 3.1"];
+$products = $argv[1];
 runProcesses($products);
 
 ?>
